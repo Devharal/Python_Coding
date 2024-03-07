@@ -29,7 +29,7 @@ class Atm():
 
     def get_pin(self): # getter and setter functions
         return self.__pin
-    
+    # this private data,getter and setter together form concept called Encapsulation
     def set_pin(self,new_pin):
         self.__pin=new_pin
         print("Pin changed")
@@ -85,6 +85,8 @@ class Atm():
 # oops fundamental hai ki class mai methods or data hota hai
 # aur in data or method ko bs object access kr sakta
 # class mai khud ek method dusre method call nhi kr sakt isliye self use krte
+            
+# Here we make our own DATATYPE called Fraction 
 class Fraction:
     # Instance Variable-> varible called inside constructor,for which value of variable is different for diff object
     def __init__(self,n,d):
@@ -94,7 +96,7 @@ class Fraction:
     def __str__(self):  #ye magic fuction tab excute hota jab bhi hum kuch rint krna chahte hai
         return "{}/{}".format(self.num,self.den)
     
-    def __add__(self,other):
+    def __add__(self,other):       #There are many such magic such used for building various datatypes
         temp_num=self.num*other.den + other.num*self.den
         temp_den=self.den*other.den
         return "{}/{}".format(temp_num,temp_den)
