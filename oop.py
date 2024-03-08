@@ -311,5 +311,29 @@ class SmartPhone3(Phone3):
         print("Inside samrtphone")
 
 s11=SmartPhone3(2000,"Samsung",12,"Android",2)
-print(s11.os)
-print(s11.brand)
+# print(s11.os)
+# print(s11.brand)
+
+# Type of Inheritance
+# 1.Single level inheritance
+# 2.Multi Level 
+# 3.Hierarchical
+# 4. Multiple Inheritance  (not in Java)
+# 5. Hibrid Inheritance ->combination of various inheritance 
+
+
+# POLYMORPHISM
+# 1. Method Overriding
+# 2. Method Overloading
+# 3. Operator Overloading
+
+class Geometry:
+
+    def area(self,radius):
+        return 3.14*radius*radius
+    
+    def area(self,l,b):
+        return l*b
+obj=Geometry()
+print(obj.area(4))
+# Ek method ko alg input de rahe hai
